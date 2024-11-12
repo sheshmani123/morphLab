@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 @app.route('/htop')
 def htop():
-    name = "Your Full Name"
+    name = "Sheshmani Chauhdary"  # Updated name
     username = os.getenv("USER") or os.getenv("USERNAME")
     server_time = datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=5, minutes=30))).strftime('%Y-%m-%d %H:%M:%S IST')
     top_output = subprocess.getoutput("top -b -n 1")
